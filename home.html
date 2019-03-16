@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- basic page needs –––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Pasquale Morelli - Portfolio</title>
+    <meta name="description" content="Portfolio Website">
+    <meta name="author" content="Pasquale Morelli">
+
+<!-- mobile specific metas –––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<!-- font –––––––––––––––––––––––––––––––––– -->
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+
+<!-- css ––––––––––––––––––––––––––––––––––– -->
+	
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/styleHome.css">
+	
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- script –––––––––––––––––––––––––––––––– -->  
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/fadeTransition.js"></script>
+	
+<!-- favicon –––––––––––––––––––––––––––––––– -->
+	<link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+    
+
+<body>
+<script>document.body.className += ' fade-out';</script>
+<div id="wrapper">
+    <div class="container main">
+		
+<!-- fixed stuff –––––––––––––––––––––––––––––––– -->
+		<h1 class="fixed" id="frasona">— Dreaming big is the best way to building the future.</h1>
+		
+		<div class="fixed" id="nomone">
+			<h1>Pasquale Morelli</h1>
+		</div>
+		
+		<div class="fixed" id="listone">
+			<ul>
+				<li><a href="works.html">Works</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+		
+		<div class="fixed" id="logone">
+			<svg viewBox="0 0 118 55.74">
+			<defs>
+			<style>.cls-1{fill:#fff;}</style>
+			</defs>
+			<g data-name="Layer 2">
+			<g data-name="Layer 1">
+			<path class="cls-1" d="m67.35 28.72l-28.58-28.58-38.77 38.69 16.91 16.91 19.61-19.6 11.7 11.69a13.52 13.52 0 0 0 19.14 -19.1z"/>
+			<rect class="cls-1" transform="translate(6.76 71.92) rotate(-45)" x="78.24" y=".44" width="23.92" height="54.72"/>
+			</g>
+			</g>
+			</svg>
+		</div>
+		
+<!-- scrolling images ------------------------------- -->
+		<div class="row">
+            <div class="twelve columns portfolio">
+				<p></p>
+            </div>
+		</div>
+		
+		<div class="row">
+            <div class="six columns portfolio">
+				<a href="work-roviza.html">
+				<img class="filter" src="img/roviza/roviza_1.jpg" alt="Roviza – Brand Identity">
+				</a>
+            </div>
+		</div>
+		
+		<div class="row">
+			<div class="seven columns portfolio">
+				<p></p>
+            </div>		
+            <div class="four columns portfolio">
+				<a href="work-ifde.html">
+				<img class="filter" src="img/ifde/ifde_1.jpg" alt="Il Fuoco dell'Eternità – Game Design">
+				</a>
+            </div>
+		</div>
+		
+		<div class="row">
+			<div class="two columns portfolio">
+				<p></p>
+            </div>
+			
+            <div class="four columns portfolio">
+				<a href="work-migra.html">
+				<img class="filter" src="img/migra/migra_1.jpg" alt="MIGRA Museum – Brand Identity">
+				</a>
+            </div>
+        </div>
+		
+        <div class="row">
+			<div class="six columns portfolio">
+				<p></p>
+            </div>
+			
+            <div class="six columns portfolio">
+				<a href="work-ops.html">
+				<img class="filter" src="img/ops/ops_1.jpg" alt="Ops – Web Design">
+				</a>
+            </div>
+		</div>
+		
+		<div class="row">
+            <div class="six columns portfolio">
+				<a href="work-planumbus.html">
+				<img class="filter" src="img/planumbus/planumbus_1.jpg" alt="Planumbus – Interaction Design">
+				</a>
+            </div>
+        </div>
+		
+		<div class="row">
+			<div class="eight columns portfolio">
+				<p></p>
+            </div>
+            <div class="four columns portfolio">
+				<a href="work-voyage.html">
+				<img class="filter" src="img/voyage/voyage_1.jpg" alt="The Voyage of The Beetle – Editoria">
+				</a>
+            </div>
+		</div>
+	</div>
+</div>
+	
+<!-- no mouse wheel ------------------------------- -->
+	<script src="dist/js/lightbox-plus-jquery.min.js"></script>	
+	<script>		
+		$('body').bind("mousewheel", function() {
+			return false;
+		});
+	</script>
+
+<!-- auto scroll ------------------------------- -->
+	<script language="JavaScript1.2">
+		var currentpos=0,alt=1,curpos1=0,curpos2=-1
+		function initialize(){
+		startit()
+		}
+		function scrollwindow(){
+		if (document.all)
+		temp=document.body.scrollTop
+		else
+		temp=window.pageYOffset
+		if (alt==0)
+		alt=1
+		else
+		alt=0
+		if (alt==0)
+		curpos1=temp
+		else
+		curpos2=temp
+		if (curpos1!=curpos2){
+		if (document.all)
+		currentpos=document.body.scrollTop+1
+		else
+		currentpos=window.pageYOffset+1
+		window.scroll(0,currentpos)
+		}
+		else{
+		currentpos=0
+		window.scroll(0,currentpos)
+		}
+		}
+		function startit(){
+		setInterval("scrollwindow()",30)
+		}
+		window.onload=initialize
+	</script>	
+</body>
+</html>

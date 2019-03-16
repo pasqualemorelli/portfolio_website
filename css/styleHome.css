@@ -1,0 +1,125 @@
+/* general content
+–––––––––––––––––––––––––––––––––––––––––––––– */
+.main{padding: 3% 3%;}
+.row {padding: 2% 0;}
+.head {background-color: #ffffff;}
+body {background-color: #0000ff}
+.about {background-color: #000000;}
+
+
+/* typography
+–––––––––––––––––––––––––––––––––––––––––––––– */
+body { 
+    font-family: 'Work+Sans', sans-serif;
+    font-size: 1.5em;
+    line-height: 1.4;
+    color: #fff;
+	opacity: 1;
+    transition: 1s opacity;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+
+/* fixed stuff 
+–––––––––––––––––––––––––––––––––––––––––––––– */
+
+#logone {
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+  	width: 30%;
+	margin: auto auto;
+}
+
+#nomone {
+	bottom: 2%;
+	left: 3%;
+}
+
+#listone {
+	bottom: 2%;
+	right: 3%;
+}
+
+#frasona {
+	top: 2%;
+	left: 3%;
+	width: 55%;
+}
+
+h1 {
+	color: #fff;
+	font-family: 'Work+Sans', sans-serif;
+	font-weight: 100;
+	font-size: 55px;
+	text-decoration: none;
+}
+
+a {
+	color: #fff;
+	font-family: 'Work+Sans', sans-serif;
+	font-weight: 100;
+	font-size: 40px;
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+	text-align: right;
+}
+
+a:hover {
+	color: #fff;
+	font-family: 'Work+Sans', sans-serif;
+	font-weight: 100;
+	font-size: 40px;
+	text-decoration: underline;
+}
+
+.fixed {
+	position: fixed;
+	z-index: 10;
+}
+
+/* scrolling images
+–––––––––––––––––––––––––––––––––––––––––––––– */
+img {
+	max-width: 100%;
+	opacity: 0.7;
+}
+
+.filter {
+	-webkit-filter: grayscale(100%);
+/*	-webkit-clip-path: inset(1% 20% 1% 20%);*/
+	filter:grayscale(100%);
+/*	border: 5px solid #fff;*/
+/*	border-radius: 100%;*/
+}
+
+img:hover {
+	filter: none;
+	-webkit-filter:grayscale(0);
+/*	border: 5px solid #0000ff;*/
+/*	text-decoration: underline;*/
+	opacity: 1;
+}
+
+/* media query
+–––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media (max-width: 550px) {
+	#frasona {
+		width: 70%;
+	}
+	
+	h1, a, a:hover {
+		font-size: 30px;
+	}
+	
+	#logone {
+		width: 60%
+	}
+}

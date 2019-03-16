@@ -1,0 +1,325 @@
+/* general content
+–––––––––––––––––––––––––––––––––––––––––––––– */
+
+.main{padding: 3% 3%;}
+.row {padding: 2% 0;}
+.head {background-color: #0000ff;}
+.about {background-color: #000000;}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+
+/* typography
+–––––––––––––––––––––––––––––––––––––––––––––– */
+
+body { 
+    font-family: 'Work+Sans', sans-serif;
+	font-weight: 300;
+    font-size: 20px;
+    line-height: 1.4;
+    color: #000;
+	opacity: 1;
+    transition: 1s opacity;
+}
+
+h1 {
+    font-family: 'Work+Sans', sans-serif;
+	font-weight: 300;
+    font-size: 55px;
+	margin-bottom: 20px;
+	margin-top: 30px;
+}
+
+h3 {
+    font-family: 'Work+Sans', sans-serif;
+	font-weight: 300;
+    font-size: 30px;
+	margin-bottom: 2px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+h2.bio {color: #fff;}
+p.bio {color: #fff;}
+
+li a {
+	color: #fff;
+	font-family: 'Work+Sans', sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+li a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
+a.underline {
+	color: #fff;
+	font-family: 'Work+Sans', sans-serif;
+	font-weight: 300;
+	text-decoration: underline;
+}
+
+.underline {
+	color: #fff;
+	font-family: 'Work+Sans', sans-serif;
+	font-weight: 300;
+	text-decoration: underline;
+}
+
+a.underline:hover {
+	color: #fff;
+	font-family: 'Work+Sans', sans-serif;
+	font-weight: 300;
+	text-decoration: none;
+}
+
+/* images 
+–––––––––––––––––––––––––––––––––––––––––––––– */
+
+img {
+	max-width: 100%;
+}
+
+/* works page 
+–––––––––––––––––––––––––––––––––––––––––––––– */
+
+.filter {
+	-webkit-filter: grayscale(100%);
+/*	-webkit-clip-path: inset(1% 20% 1% 20%);*/
+	filter:grayscale(100%);
+/*	border: 5px solid #fff;*/
+/*	border-radius: 100%;*/
+}
+
+.filter:hover {
+	filter: none;
+	-webkit-filter:grayscale(0);
+/*	border: 5px solid #0000ff;*/
+	text-decoration: underline;
+}
+
+#worksTumb:hover {
+	color: #000;
+	font-weight: 300;
+    text-decoration: underline;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+/* work-project page
+–––––––––––––––––––––––––––––––––––––––––––––– */
+
+#topWorks {
+	margin-top: 30px;
+}
+
+.mobileDivisore {
+	display: none;
+}
+
+/* about page
+–––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* contact page
+–––––––––––––––––––––––––––––––––––––––––––––– */
+
+.contact {
+	color: #000;
+	font-family: 'Work+Sans', sans-serif;
+	font-weight: 300;
+	font-size: 30px;
+	text-decoration: none;
+}
+
+.contactUnderline {
+	color: #000;
+	font-family: 'Work+Sans', sans-serif;
+	font-weight: 300;
+	font-size: 30px;
+	text-decoration: underline;
+}
+
+a.contactUnderline:hover {
+	color: #000;
+	font-family: 'Work+Sans', sans-serif;
+	font-weight: 300;
+	text-decoration: none;
+}
+
+/* footer
+–––––––––––––––––––––––––––––––––––––––––––––– */
+
+li.footerWhite {
+	color: #fff;
+	font-family: 'Work+Sans', sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+}
+
+footer {
+  background-color: black;
+}
+
+
+footer p {
+	color: #fff;
+	font-family: 'Work+Sans', sans-serif;
+	font-weight: 100;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+footer ul {
+	list-style-type: none;
+	text-align: left;
+	margin-left: 30px;
+	padding: 10px;
+}
+
+/* navbar
+–––––––––––––––––––––––––––––––––––––––––––––– */
+
+header {
+	height: 50px;
+	width: 100%;
+	display: block;
+    position: fixed;
+	z-index: 10;
+}
+
+
+.topnav {
+  background-color: #00f;
+  overflow: hidden;
+}
+
+.navRight {
+	float: right;	
+	margin-right: 5%;
+	padding: 5px 0px;
+}
+
+.topnav a {
+  display: inline-block;
+  font-family: 'Work+Sans', sans-serif;
+  color: #fff;
+  text-align: center;
+  padding: 5px 15px;
+  font-size: 20px;
+}
+
+.topnav .icon {
+  margin-top: 5px;
+  display: none;
+}
+
+.logo {
+	position: absolute;
+	z-index: 5;
+	display: inline;
+	float: left;
+    font-family: 'Work+Sans', sans-serif;
+	font-weight: 100;
+	padding: 10px;
+	margin-left: 5%;
+}
+
+header a{
+    font-family: 'Work+Sans', sans-serif;
+	font-weight: 100;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+header a:hover{
+	color: #fff;
+    text-decoration: underline;
+}
+
+.navUnderline {
+	color: #fff;
+	font-family: 'Work+Sans', sans-serif;
+	font-weight: 300;
+	text-decoration: underline;
+}
+
+/* media query 
+–––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* general ––– */
+
+@media (max-width: 1000px) {
+	body {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 750px) {
+
+	h1 {
+		font-size: 30px;
+		width: 80%;
+	}
+	.pageTitle {
+		margin-top: 60px;
+	}
+	h3 {
+		font-size: 30px;
+	}
+	.contact, .contactUnderline {
+		font-size: 20px;
+	}
+	#topWorks {
+		margin-top: 60px;
+	}
+	.divisore {
+		display: none;
+	}
+	.mobileDivisore {
+		display: block;
+	}
+}
+
+/* hamburger menu ––– */
+
+@media screen and (max-width: 750px) {
+  .topnav a {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 5%;
+    top: 0px;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: right;
+	margin: 5px 0;
+  }
+  .navRight {
+    margin-top: 40px;
+  }
+}
